@@ -1,8 +1,7 @@
 ## GIT
-----
 
 ### Below are the basic, really basic stuff regarding GIT. Use the manual and internet for further help.
-======================================================================================================
+
   - check version
 	```git --version```
 
@@ -94,7 +93,6 @@
 
 
 ### GIT REMOTE
------------
 
   - check remote origin:
 	```git remote -v```
@@ -132,39 +130,36 @@ NOTE: by convention, keep own repo as "origin" and the og from where you forked 
 
 
 ### GIT FORK
----------
 
-fork anothers repo on github or other hosting platforms
-this repo now available as your own repo (copy)
-clone this repo to your local and contribute
-push changes to your own repo
+  - fork anothers repo on github or other hosting platforms
+  - this repo now available as your own repo (copy)
+  - clone this repo to your local and contribute
+  - push changes to your own repo
 
 
 =======================================================================================================
 
 
 ### Connect GIT and Github
------------------------
 
-authenticating using passphrase is not allowed now, can do using keys.
+  - authenticating using passphrase is not allowed now, can do using keys.
 
-create new pair of keys:
+  - create new pair of keys:
 	```
 	ssh-keygen -t rsa -b 4096 -C "<any comment here/can omit>"		# can press enter when asked for file location, passphrase or set them according to your needs
 	```
 
-when you clone, use ssh link
-set origin to ssh link, if it is http link then you will be asked uname/pass which doesnt work as a mean to auth anymore
+  - when you clone, use ssh link, set origin to ssh link, if it is http link then you will be asked uname/pass which doesnt work as a mean to auth anymore
 	```
 	git remote set-url origin <link>		# can be other stuff instead of origin too, like upstream
 	```
 
-to clone your private repos, you need to generate PAT (Personal Access Tokens):
-	Settings -> Developer Settings -> Personal Access Tokens
-	can create Tokens (classic):
-	do create new token -> fill a note -> tick repo (without which you cant clone private repo)
-		-> Create
-	once you have the token, clone this way:
+  - to clone your private repos, you need to generate PAT (Personal Access Tokens):
+	- Settings -> Developer Settings -> Personal Access Tokens
+	- can create Tokens (classic):
+		- do create new token -> fill a note -> tick repo (without which you cant clone private repo)
+	- -> Create
+	- once you have the token, clone this way:
 		```git clone https://<token>@github.com/<account>/<repo>```
 
 NOTE: the above is needed only for the http link and not the ssh link, ssh link directly uses the keys to auth and 
