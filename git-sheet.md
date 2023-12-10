@@ -1,4 +1,5 @@
 ## GIT
+---
 
 ### Below are the basic, really basic stuff regarding GIT. Use the manual and internet for further help.
 
@@ -89,7 +90,7 @@
 	*.git/info/exclude*	works same as .gitignore but not seen to anyone else
 
 
-======================================================================================================
+---
 
 
 ### GIT REMOTE
@@ -126,7 +127,7 @@ NOTE: by convention, keep own repo as "origin" and the og from where you forked 
 	```git diff origin/master```
 
 
-======================================================================================================
+---
 
 
 ### GIT FORK
@@ -137,7 +138,7 @@ NOTE: by convention, keep own repo as "origin" and the og from where you forked 
   - push changes to your own repo
 
 
-=======================================================================================================
+---
 
 
 ### Connect GIT and Github
@@ -166,4 +167,4 @@ NOTE: the above is needed only for the http link and not the ssh link, ssh link 
 	  clones the repo
 
 
-=======================================================================================================
+---
